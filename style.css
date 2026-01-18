@@ -1,0 +1,153 @@
+/* ===== БАЗОВЫЕ СТИЛИ ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Pacifico", cursive;
+    overflow-x: hidden;
+}
+
+/* ===== ШАПКА ===== */
+.box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: red;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    z-index: 1000;
+}
+
+/* ЛЕВАЯ КОЛОНКА (ЛОГО) */
+.left-side .logo {
+    height: 60px;
+}
+
+/* ЦЕНТРАЛЬНАЯ НАВИГАЦИЯ */
+nav {
+    display: flex;
+    gap: 170px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+/* ПРАВАЯ КОЛОНКА (МАГАЗИН + ПРОФИЛЬ) */
+.right-side {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.magaz {
+    font-size: 18px;
+    color: black;
+    width: 160px;
+    margin-left: -140px;
+}
+
+.profile {
+    width: 60px;
+    height: 60px;
+}
+
+/* ===== ОСНОВНОЙ БЛОК С ФОНОМ ===== */
+.osn {
+    margin-top: 100px; /* отступ под фиксированную шапку */
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: url("./images/voprosi osn stranitsa.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    color: rgb(0, 0, 0);
+    
+}
+
+/* ВНУТРЕННИЕ ЭЛЕМЕНТЫ ПРОЗРАЧНЫ */
+.textcreate,
+.oform,
+.mama {
+    background: transparent;
+}
+
+/* Заголовок */
+.textcreate {
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Описание */
+.oform {
+    font-size: 22px;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+/* Картинка */
+.mama {
+    width: 400px;
+    height: auto;
+}
+
+/* Ассортимент */
+.assortiments {
+    margin-top: 200px;
+    font-size: 36px;
+    text-align: center;
+    color: black;
+}
+.cat{
+    position: absolute;
+    width: 200px;
+    margin-left: 550px;
+    margin-top: 50px;
+   
+}
+.boxik{
+    position: absolute;
+    width: 200px;
+    margin-left: -850px;
+    margin-top: 50px;
+}
+.stars{
+    position: absolute;
+    width: 200px;
+    margin-left: -100px;
+    margin-top: 150px;
+}
+.vibor{
+    margin-top: 600px;
+}
+.ramka{
+    margin-right: 1200px;
+    height: 250px;
+    width: 650px;
+
+}
+.ramochka{
+    width: 650px;
+    height: 250px;
+}
